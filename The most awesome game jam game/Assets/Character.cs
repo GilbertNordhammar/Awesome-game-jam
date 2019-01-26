@@ -36,6 +36,7 @@ public class Character : MonoBehaviour
 
     void TriggerQuicktimeEvent(QuickTimeTrigger obj)
     {
+        InputSystem.instance.StartInput();
         spawner.OnQuicktimeStart();
     }
 

@@ -8,6 +8,8 @@ using Random = UnityEngine.Random;
 
 public class InputSystem : MonoBehaviour
 {
+    public static InputSystem instance;
+
     [Range(0, 10)] public int minKeys = 1;
     [Range(0, 10)] public int maxKeys = 10;
     public List<KeyCode> possibleKeys;
@@ -24,6 +26,17 @@ public class InputSystem : MonoBehaviour
     static public event SuccessOrFailureDelegate Succes = delegate { };
     static public event SuccessOrFailureDelegate Failure = delegate { };
 
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
 
     private void OnValidate()
     {
