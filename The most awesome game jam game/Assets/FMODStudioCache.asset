@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114641894224327296}
-  - {fileID: 114054481295133184}
-  - {fileID: 114112118523753400}
+  - {fileID: 114704224657188684}
+  - {fileID: 114693662126132566}
+  - {fileID: 114434032844516160}
   EditorEvents:
-  - {fileID: 114898830455980640}
+  - {fileID: 114830882660101276}
   MasterBanks:
-  - {fileID: 114112118523753400}
+  - {fileID: 114434032844516160}
   StringsBanks:
-  - {fileID: 114641894224327296}
+  - {fileID: 114704224657188684}
   stringsBankWriteTime: 636840429124675698
   cacheVersion: 3
 --- !u!114 &114054481295133184
@@ -45,6 +45,26 @@ MonoBehaviour:
     Value: 27616
   Exists: 1
 --- !u!114 &114112118523753400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod test project\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636840429124605887
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
+--- !u!114 &114434032844516160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,6 +142,46 @@ MonoBehaviour:
   - Name: Desktop
     Value: 12474
   Exists: 1
+--- !u!114 &114693662126132566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod test project\Build\Desktop\Test
+    Bank.bank
+  lastModified: 636840429125523436
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 27616
+  Exists: 1
+--- !u!114 &114704224657188684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod test project\Build\Desktop\Master
+    Bank.strings.bank
+  lastModified: 636840429124675698
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 772
+  Exists: 1
 --- !u!114 &114751985038479064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +201,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 772
   Exists: 1
+--- !u!114 &114830882660101276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Test sound
+  guid: 2dc465509c2ada4c9a7d5146e2e1bd8c
+  Banks:
+  - {fileID: 114693662126132566}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1907
 --- !u!114 &114886449999731482
 MonoBehaviour:
   m_ObjectHideFlags: 0
