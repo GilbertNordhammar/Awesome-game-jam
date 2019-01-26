@@ -56,6 +56,7 @@ public class Character : MonoBehaviour
             );
         MoneyDisplay.instance.SetLoseTextEnabled(true);
         spawner.move = false;
+        GetComponent<CapsuleCollider>().isTrigger = false;
         body.useGravity = true;
         InputSystem.instance.SetLose();
     }

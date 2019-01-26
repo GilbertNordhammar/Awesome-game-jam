@@ -79,7 +79,7 @@ public class StageSpawner : MonoBehaviour
 
             if (c.position.z <= lowerEdge)
             {
-                c.position = new Vector3(c.position.x, c.position.y, upperEdge);
+                //c.position = new Vector3(c.position.x, c.position.y, upperEdge);
             }
         }
     }
