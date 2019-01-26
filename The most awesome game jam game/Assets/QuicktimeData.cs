@@ -5,5 +5,8 @@ using UnityEngine;
 [CreateAssetMenu()]
 public class QuicktimeData : ScriptableObject
 {
-    public int animation;
+    public string animation;
+    public int cost;
+    public float destructionDelay;
+    public Vector3 deathForce;
 }

@@ -10,6 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2653f525f3c2444389d60c530c03466, type: 3}
-  m_Name: QuicktimeDataTest
+  m_Name: Burger
   m_EditorClassIdentifier: 
-  animation: 1
+  animation: uppercut
+  cost: 60
+  destructionDelay: 2
+  deathForce: {x: -1, y: 8, z: 0}

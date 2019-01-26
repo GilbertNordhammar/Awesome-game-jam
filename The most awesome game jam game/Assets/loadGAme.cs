@@ -1,17 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GlobalConfig : MonoBehaviour
+public class loadGAme : MonoBehaviour
 {
-    public static float StageSpeed = 0.2f;
-    public static float slowmoFactor = 0.2f;
-    public static string bootstrapSceneName = "BootstrapScene";
-
+    public string gameScene;
     // Start is called before the first frame update
     void Start()
     {
-        
+        SceneManager.LoadScene(gameScene);
     }
 
     // Update is called once per frame

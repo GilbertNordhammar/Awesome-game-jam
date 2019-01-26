@@ -1,27 +1,63 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public StageSpawner spawner;
+    public int starting_riksdaler;
 
-    private float startTimer = 10.0f;
+    public StageSpawner spawner;
+    public Animator armsAnimator;
+
+    private QuickTimeTrigger currentQuicktime;
+    private int svenska_riksdaler_;
+    public int svenska_riksdaler {
+        get {
+            return svenska_riksdaler_;
+        }
+        set {
+            MoneyDisplay.instance.SoftSetMoney(value);
+            svenska_riksdaler_ = value;
+
+            if (svenska_riksdaler_ <= 0) {
+                Lose();
+            }
+        }
+    }
+
+    private Rigidbody body;
+
+    void Awake() {
+        body = GetComponent<Rigidbody>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        svenska_riksdaler = starting_riksdaler;
+        InputSystem.instance.Failure += TriggerQuicktimeEventFail;
+        InputSystem.instance.Succes += TriggerQuicktimeEventSuccess;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float d = DistanceToQuicktimeEnd();
-        if (d > -1.0f)
-        {
-            Debug.Log(d);
-        }
+
+    }
+
+    void Lose()
+    {
+        body.AddTorque(new Vector3(
+            2.0f, 
+            UnityEngine.Random.Range(0f, 2f) - 1f, 
+            UnityEngine.Random.Range(0f, 2f) - 1f), 
+            ForceMode.Impulse
+            );
+        MoneyDisplay.instance.SetLoseTextEnabled(true);
+        spawner.move = false;
+        body.useGravity = true;
+        InputSystem.instance.SetLose();
     }
 
     // returns -1.0f if there is no active quicktime event approaching the player.
@@ -36,13 +72,31 @@ public class Character : MonoBehaviour
 
     void TriggerQuicktimeEvent(QuickTimeTrigger obj)
     {
-        InputSystem.instance.StartInput();
+        currentQuicktime = obj;
+        InputSystem.instance.StartInput(1);
         spawner.OnQuicktimeStart();
+    }
+
+    void TriggerQuicktimeEventSuccess()
+    {
+        TriggerQuicktimeEventOver(true);
+    }
+
+    void TriggerQuicktimeEventFail()
+    {
+        TriggerQuicktimeEventOver(false);
     }
 
     public void TriggerQuicktimeEventOver(bool success)
     {
-        Debug.Log("Quicktime event ended");
+        if (success) {
+            armsAnimator.SetTrigger(currentQuicktime.data.animation);
+            currentQuicktime.DestroyObj();
+        } else {
+            svenska_riksdaler -= currentQuicktime.data.cost;
+            Destroy(currentQuicktime.gameObject);
+        }
+        InputSystem.instance.StopInput();
         spawner.OnQuicktimeEnd(success);
     }
 

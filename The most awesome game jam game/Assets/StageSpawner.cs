@@ -93,7 +93,6 @@ public class StageSpawner : MonoBehaviour
     {
         slowmo = false;
         quicktimeTimer = quicktimeTimerInitialValue;
-        Destroy(activeQuicktimeTrigger.gameObject);
         activeQuicktimeTrigger = null;
     }
 
