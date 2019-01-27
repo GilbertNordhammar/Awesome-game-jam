@@ -12,10 +12,13 @@ public class QuickTimeTrigger : MonoBehaviour
 
     public QuicktimeData data;
 
+    public float triggerDistance;
+
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody>();
+        trigger.transform.localPosition = new Vector3(0, 0, -triggerDistance);
     }
 
     // Update is called once per frame

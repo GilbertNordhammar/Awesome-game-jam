@@ -139,6 +139,7 @@ MonoBehaviour:
   endTrigger: {fileID: 1388318256}
   graphicModel: {fileID: 837447271438198878}
   data: {fileID: 11400000, guid: 75e0e8376ff53fd408d5dc5461bf7f11, type: 2}
+  triggerDistance: 6
 --- !u!54 &5656781911358029309
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -212,21 +213,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: cb4bb8f1b05f75246a2aad2ebae2cc3d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: cb4bb8f1b05f75246a2aad2ebae2cc3d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: cb4bb8f1b05f75246a2aad2ebae2cc3d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: cb4bb8f1b05f75246a2aad2ebae2cc3d, type: 3}
+    - target: {fileID: 2300002, guid: cb4bb8f1b05f75246a2aad2ebae2cc3d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6eae5046b9efc43468d3cfa46980ec73, type: 2}
-    - target: {fileID: 2300002, guid: cb4bb8f1b05f75246a2aad2ebae2cc3d, type: 3}
+    - target: {fileID: 2300000, guid: cb4bb8f1b05f75246a2aad2ebae2cc3d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6eae5046b9efc43468d3cfa46980ec73, type: 2}

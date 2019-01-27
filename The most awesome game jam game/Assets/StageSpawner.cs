@@ -13,11 +13,13 @@ public class Prop
 
 public class StageSpawner : MonoBehaviour
 {
-    public Transform[] quicktimeTriggers;
+    public Transform[] difficulty1;
+    public Transform[] difficulty2;
+    public Transform[] difficulty3;
 
     public Prop[] props;
 
-    public Transform stageChunk;
+    public Transform[] levels;
     public float intervalDistance;
     public int chunkLength;
 
@@ -29,16 +31,24 @@ public class StageSpawner : MonoBehaviour
 
     public float quicktimeTimer;
 
+    [Space]
+    public int difficultyRaise1;
+    public int difficultyRaise2;
+
+    private Transform[] quicktimeTriggers;
     private List<Transform> buffer;
     private Vector3 movementVector;
     private Vector3 quicktimeSpawnPosition;
     private Transform activeQuicktimeTrigger;
     private float quicktimeTimerInitialValue;
+    private int completedQuicktimes;
 
     void Awake()
     {
+        completedQuicktimes = 0;
+        quicktimeTriggers = difficulty1;
         movementVector = new Vector3(0, 0, -GlobalConfig.StageSpeed);
-        quicktimeSpawnPosition = new Vector3(0, 2, upperEdge);
+        quicktimeSpawnPosition = new Vector3(0, 1, upperEdge);
         quicktimeTimerInitialValue = quicktimeTimer;
     }
 
@@ -76,11 +86,6 @@ public class StageSpawner : MonoBehaviour
             {
                 c.position += movementVector * (slowmo ? GlobalConfig.slowmoFactor : 1.0f);
             }
-
-            if (c.position.z <= lowerEdge)
-            {
-                //c.position = new Vector3(c.position.x, c.position.y, upperEdge);
-            }
         }
     }
 
@@ -94,6 +99,14 @@ public class StageSpawner : MonoBehaviour
         slowmo = false;
         quicktimeTimer = quicktimeTimerInitialValue;
         activeQuicktimeTrigger = null;
+        completedQuicktimes++;
+        if (completedQuicktimes > difficultyRaise2)
+        {
+            quicktimeTriggers = difficulty3;
+        } else if (completedQuicktimes > difficultyRaise1)
+        {
+            quicktimeTriggers = difficulty2;
+        }
     }
 
     void SpawnQuickTimeTrigger()
@@ -119,7 +132,7 @@ public class StageSpawner : MonoBehaviour
                 }
             }
 
-            Transform chunk = Instantiate(stageChunk, chunkPos, new Quaternion(0, 0, 0, 0));
+            Transform chunk = Instantiate(levels[UnityEngine.Random.Range(0, levels.Length)], chunkPos, new Quaternion(0, 0, 0, 0));
             chunk.SetParent(transform);
             ret.Add(chunk);
         }

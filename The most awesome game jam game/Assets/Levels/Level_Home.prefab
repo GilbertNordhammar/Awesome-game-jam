@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4930796009178317624}
   m_Layer: 0
-  m_Name: Level
+  m_Name: Level_Home
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,11 +63,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1070314838052378699, guid: a05c86b11a3426c44afbc856bb353c14,
+    - target: {fileID: 1878238164791261504, guid: a05c86b11a3426c44afbc856bb353c14,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 85
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b40ec92979e5ed34b8b18afbe74961e2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a05c86b11a3426c44afbc856bb353c14, type: 3}
 --- !u!4 &3566967595318876008 stripped
