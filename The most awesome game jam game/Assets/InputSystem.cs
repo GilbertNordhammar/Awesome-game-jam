@@ -66,7 +66,6 @@ public class InputSystem : MonoBehaviour
     {
         if (lost && Input.GetKeyDown(KeyCode.Return))
         {
-
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 

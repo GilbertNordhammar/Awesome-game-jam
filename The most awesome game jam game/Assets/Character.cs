@@ -98,11 +98,21 @@ public class Character : MonoBehaviour
             var sound = FMODUnity.RuntimeManager.CreateInstance(currentQuicktime.data.failSound);
             sound.start();
 
+            ReceiptDisplay.instance.SetTotalCost(currentQuicktime.data.cost);
+            ReceiptDisplay.instance.SetThingName(currentQuicktime.data.thingName);
+            ReceiptDisplay.instance.Show(true);
+            Invoke("HideReceipt", 1f);
+
             svenska_riksdaler -= currentQuicktime.data.cost;
             Destroy(currentQuicktime.gameObject);
         }
         InputSystem.instance.StopInput();
         spawner.OnQuicktimeEnd(success);
+    }
+
+    void HideReceipt()
+    {
+        ReceiptDisplay.instance.Show(false);
     }
 
     void OnTriggerEnter(Collider col)

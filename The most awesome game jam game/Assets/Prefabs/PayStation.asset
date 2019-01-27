@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2653f525f3c2444389d60c530c03466, type: 3}
   m_Name: PayStation
   m_EditorClassIdentifier: 
+  thingName: PayStation 4
   animation: uppercut
-  cost: 3000
+  cost: 3500
   difficulty: 10
   destructionDelay: 2
   deathForce: {x: -1, y: 8, z: 0}

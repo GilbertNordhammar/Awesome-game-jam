@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod test project\fmod
-    test project.fspro
-  SourceProjectPathUnformatted: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod
+  sourceProjectPath: C:\Users\Tomas\Workspace\game-jam\Awesome-game-jam\fmod test
+    project\fmod test project.fspro
+  SourceProjectPathUnformatted: C:\Users\Tomas\Workspace\game-jam\Awesome-game-jam\fmod
     test project\fmod test project.fspro
-  SourceBankPathUnformatted: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod
+  SourceBankPathUnformatted: C:\Users\Tomas\Workspace\game-jam\Awesome-game-jam\fmod
     test project\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
@@ -62,7 +62,5 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBanks:
-  - Master Bank
-  Banks:
-  - Test Bank
+  MasterBanks: []
+  Banks: []
