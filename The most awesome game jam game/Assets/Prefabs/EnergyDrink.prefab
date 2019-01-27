@@ -138,7 +138,7 @@ MonoBehaviour:
   trigger: {fileID: 324108963}
   endTrigger: {fileID: 1388318256}
   graphicModel: {fileID: 1003334365920579179}
-  data: {fileID: 11400000, guid: 3d646a69a710167409dc9fe6f5d1fe3a, type: 2}
+  data: {fileID: 11400000, guid: 1d220fe06428a5c4d9a26046244b0ae7, type: 2}
   triggerDistance: 6
 --- !u!54 &5385299897401003417
 Rigidbody:

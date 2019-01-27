@@ -66,7 +66,6 @@ public class InputSystem : MonoBehaviour
     {
         if (lost && Input.GetKeyDown(KeyCode.Return))
         {
-
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
@@ -145,6 +144,9 @@ public class InputSystem : MonoBehaviour
     List<KeyCode> GetRandomKeyCodes(int difficulty)
     {
         var keys = new List<KeyCode>();
+
+        if (difficulty > 4) minKeys = difficulty - 3;
+
         var numbKeys = Random.Range(minKeys, difficulty + 1);
 
         for (int i = 0; i < numbKeys; i++)

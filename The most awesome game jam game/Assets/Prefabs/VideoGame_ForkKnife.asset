@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2653f525f3c2444389d60c530c03466, type: 3}
-  m_Name: Burger
+  m_Name: VideoGame_ForkKnife
   m_EditorClassIdentifier: 
-  thingName: 'Big Jack: One Crappy Deal'
+  thingName: Fork Knife for PC4
   animation: uppercut
-  cost: 60
-  difficulty: 3
+  cost: 700
+  difficulty: 6
   destructionDelay: 2
-  deathForce: {x: -1, y: 8, z: 0}
+  deathForce: {x: -1, y: 6, z: 0}
   failSound: event:/Test sound

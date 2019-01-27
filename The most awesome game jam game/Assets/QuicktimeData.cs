@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu()]
 public class QuicktimeData : ScriptableObject
 {
+    public string thingName;
     public string animation;
     public int cost;
     public int difficulty;

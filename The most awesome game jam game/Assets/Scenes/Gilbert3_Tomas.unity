@@ -359,54 +359,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5111657345991822986, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -380
-      objectReference: {fileID: 0}
-    - target: {fileID: 5111657345991822986, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5111657345991822986, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5111657345991822986, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -490
-      objectReference: {fileID: 0}
-    - target: {fileID: 5111657345991822986, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5111657345991822986, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5111657345991822986, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -1020
-      objectReference: {fileID: 0}
-    - target: {fileID: 5111657345991822986, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7562222, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1209928867, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1, type: 3}
 --- !u!1 &1413102695
@@ -464,19 +416,16 @@ MonoBehaviour:
     index: 23
     prop: {fileID: 2037295142, guid: c85424ab271d7bc4cabc77eee7e3ef2a, type: 3}
   levels:
-  - {fileID: 4930796009178317624, guid: d6b39b1d4f609564193633ac8dcbb6a1, type: 3}
-  - {fileID: 4930796009178317624, guid: 1f3b28dbf48d3544a8b53d738461a546, type: 3}
   - {fileID: 4930796009178317624, guid: 3f8d4441b992d574da2f612d833ed324, type: 3}
-  - {fileID: 4930796009178317624, guid: b6301c1774aff2c48840fa672bb86401, type: 3}
   intervalDistance: 2
   chunkLength: 1
   lowerEdge: 50
   upperEdge: 40
   move: 1
   slowmo: 0
-  quicktimeTimer: 0.1
-  difficultyRaise1: 3
-  difficultyRaise2: 5
+  quicktimeTimer: 1
+  difficultyRaise1: 5
+  difficultyRaise2: 9
 --- !u!4 &1413102697
 Transform:
   m_ObjectHideFlags: 0

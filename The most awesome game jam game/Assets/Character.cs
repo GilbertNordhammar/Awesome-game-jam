@@ -62,6 +62,12 @@ public class Character : MonoBehaviour
         InputSystem.instance.SetLose();
     }
 
+    void Win()
+    {
+        spawner.move = false;
+        MoneyDisplay.instance.Win();
+    }
+
     // returns -1.0f if there is no active quicktime event approaching the player.
     public float DistanceToQuicktimeEnd()
     {
@@ -98,11 +104,21 @@ public class Character : MonoBehaviour
             var sound = FMODUnity.RuntimeManager.CreateInstance(currentQuicktime.data.failSound);
             sound.start();
 
+            ReceiptDisplay.instance.SetTotalCost(currentQuicktime.data.cost);
+            ReceiptDisplay.instance.SetThingName(currentQuicktime.data.thingName);
+            ReceiptDisplay.instance.Show(true);
+            Invoke("HideReceipt", 1.2f);
+
             svenska_riksdaler -= currentQuicktime.data.cost;
             Destroy(currentQuicktime.gameObject);
         }
         InputSystem.instance.StopInput();
         spawner.OnQuicktimeEnd(success);
+    }
+
+    void HideReceipt()
+    {
+        ReceiptDisplay.instance.Show(false);
     }
 
     void OnTriggerEnter(Collider col)
@@ -112,6 +128,10 @@ public class Character : MonoBehaviour
         }
         else if (col.CompareTag("EndTrigger")) {
             TriggerQuicktimeEventOver(false);
+        }
+        else if (col.CompareTag("Home"))
+        {
+            Win();
         }
     }
 }
