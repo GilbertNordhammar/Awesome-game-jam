@@ -88,7 +88,8 @@ public class InputSystem : MonoBehaviour
         }
 
         var correctKeyPressed = Input.GetKeyDown(currentKey.key);
-        var wrongKeyPressed = Input.anyKeyDown && !Input.GetKeyDown(currentKey.key);
+        var mouseButtonPressed = Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Mouse2);
+        var wrongKeyPressed = Input.anyKeyDown && !Input.GetKeyDown(currentKey.key) && !mouseButtonPressed;
 
         if (correctKeyPressed)
         {
