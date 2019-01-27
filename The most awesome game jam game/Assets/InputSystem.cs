@@ -21,10 +21,10 @@ public class InputSystem : MonoBehaviour
 
     [Space]
     [FMODUnity.EventRef]
-    string soundCorrectButton;
+    public string soundCorrectButton;
 
     [FMODUnity.EventRef]
-    string soundWrongButton;
+    public string soundWrongButton;
 
     bool lost = false;
     bool isPlaying = false;
@@ -88,15 +88,22 @@ public class InputSystem : MonoBehaviour
         }
 
         var correctKeyPressed = Input.GetKeyDown(currentKey.key);
-        var wrongKeyPressed = Input.anyKeyDown && !Input.GetKeyDown(currentKey.key);
+        var mouseButtonPressed = Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Mouse2);
+        var wrongKeyPressed = Input.anyKeyDown && !Input.GetKeyDown(currentKey.key) && !mouseButtonPressed;
 
         if (correctKeyPressed)
         {
+            var sound = FMODUnity.RuntimeManager.CreateInstance(soundCorrectButton);
+            sound.start();
+
             Destroy(currentKey.trans.gameObject);
             currentKey = null;
         }
         else if (wrongKeyPressed)
         {
+            var sound = FMODUnity.RuntimeManager.CreateInstance(soundWrongButton);
+            sound.start();
+
             StopInput();
             Failure.Invoke();
         }

@@ -353,6 +353,8 @@ MonoBehaviour:
   buttonsToPress: {fileID: 5111657345991822986}
   buttonPrefab: {fileID: 7968962375206964618, guid: 8a7af807f71f5a24ca86ea0e9e912f1c,
     type: 3}
+  soundCorrectButton: event:/Test sound
+  soundWrongButton: event:/Test sound
 --- !u!1 &5111657346487930433
 GameObject:
   m_ObjectHideFlags: 0
