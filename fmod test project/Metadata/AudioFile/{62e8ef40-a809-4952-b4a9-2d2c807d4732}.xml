@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{62e8ef40-a809-4952-b4a9-2d2c807d4732}">
+        <property name="assetPath">
+            <value>FootstepsStone 4-Footsteps Indoors Rock-4-1.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.50831249999999994</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{cdf4ae33-be89-4594-8f64-7d6faf083ac3}</destination>
+        </relationship>
+    </object>
+</objects>

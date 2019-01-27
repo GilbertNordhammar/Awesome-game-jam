@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{e2644b05-cf9a-48f5-9143-59915dbdf756}">
+        <property name="name">
+            <value>PS4</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{205026c1-0118-4416-a779-cc5e365fc3cd}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{703597e2-0c28-4e16-9772-a1465dccd8d8}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{263bbd03-0fd2-4fa4-ba7b-8f7acf4b4c8e}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{205026c1-0118-4416-a779-cc5e365fc3cd}">
+        <relationship name="effects">
+            <destination>{ab329d52-6e10-4fb7-bfa1-e9e52550eae7}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{703597e2-0c28-4e16-9772-a1465dccd8d8}"/>
+    <object class="MixerBusFader" id="{ab329d52-6e10-4fb7-bfa1-e9e52550eae7}"/>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{63af0342-b513-43d6-aaed-f306e5a16e8b}">
+        <property name="assetPath">
+            <value>FootstepPavement 8-Footstep on Pavement Pavement-21.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.18108333333333335</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{cdf4ae33-be89-4594-8f64-7d6faf083ac3}</destination>
+        </relationship>
+    </object>
+</objects>
