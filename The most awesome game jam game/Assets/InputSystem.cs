@@ -19,6 +19,13 @@ public class InputSystem : MonoBehaviour
     public Transform buttonsToPress;
     public Transform buttonPrefab;
 
+    [Space]
+    [FMODUnity.EventRef]
+    string soundCorrectButton;
+
+    [FMODUnity.EventRef]
+    string soundWrongButton;
+
     bool lost = false;
     bool isPlaying = false;
     Queue<KeyObject> keysToPress;
@@ -71,6 +78,7 @@ public class InputSystem : MonoBehaviour
         if (currentKey == null && keysToPress.Count > 0)
         {
             currentKey = keysToPress.Dequeue();
+            currentKey.text.gameObject.GetComponentInParent<Image>().color = Color.green;
         }
         else if (currentKey == null && keysToPress.Count == 0)
         {

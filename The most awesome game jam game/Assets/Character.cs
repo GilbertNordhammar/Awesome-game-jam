@@ -9,6 +9,7 @@ public class Character : MonoBehaviour
 
     public StageSpawner spawner;
     public Animator armsAnimator;
+    [Range(0, 10)] public int difficulty = 10;
 
     private QuickTimeTrigger currentQuicktime;
     private int svenska_riksdaler_;
@@ -74,7 +75,7 @@ public class Character : MonoBehaviour
     void TriggerQuicktimeEvent(QuickTimeTrigger obj)
     {
         currentQuicktime = obj;
-        InputSystem.instance.StartInput(1);
+        InputSystem.instance.StartInput(difficulty);
         spawner.OnQuicktimeStart();
     }
 
@@ -94,6 +95,9 @@ public class Character : MonoBehaviour
             armsAnimator.SetTrigger(currentQuicktime.data.animation);
             currentQuicktime.DestroyObj();
         } else {
+            var sound = FMODUnity.RuntimeManager.CreateInstance(currentQuicktime.data.failSound);
+            sound.start();
+
             svenska_riksdaler -= currentQuicktime.data.cost;
             Destroy(currentQuicktime.gameObject);
         }
