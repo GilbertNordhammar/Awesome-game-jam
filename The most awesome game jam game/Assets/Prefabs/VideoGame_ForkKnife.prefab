@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 2037295143}
   - component: {fileID: 1850656289048424848}
   m_Layer: 0
-  m_Name: VideoGame
+  m_Name: VideoGame_ForkKnife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,20 +213,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bbcb120ff9adc1946922e41e45a1892d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bbcb120ff9adc1946922e41e45a1892d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bbcb120ff9adc1946922e41e45a1892d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: bbcb120ff9adc1946922e41e45a1892d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 07f1ebdc77b201c42ad670487006c146, type: 2}
+      objectReference: {fileID: 2100000, guid: e77773b35d93c2a4e8d46beb5d5dcaed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbcb120ff9adc1946922e41e45a1892d, type: 3}
 --- !u!4 &1282685714 stripped

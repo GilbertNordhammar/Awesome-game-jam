@@ -75,7 +75,7 @@ public class Character : MonoBehaviour
     void TriggerQuicktimeEvent(QuickTimeTrigger obj)
     {
         currentQuicktime = obj;
-        InputSystem.instance.StartInput(difficulty);
+        InputSystem.instance.StartInput(obj.data.difficulty);
         spawner.OnQuicktimeStart();
     }
 
