@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{302aa6b9-4eab-49c5-9801-3cf6a504ee5c}">
+        <property name="name">
+            <value>LoseMoney</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{d1e64416-86a4-4008-89b9-715750f9d54d}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{e3a32c2d-b2e7-4608-9bcf-36f79e600867}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{a5a694b8-813b-4639-bd6e-bab357fcd294}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{d1e64416-86a4-4008-89b9-715750f9d54d}">
+        <relationship name="effects">
+            <destination>{0ac5a58b-2ef7-4e94-acb8-d8ef91b2e30a}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{e3a32c2d-b2e7-4608-9bcf-36f79e600867}"/>
+    <object class="MixerBusFader" id="{0ac5a58b-2ef7-4e94-acb8-d8ef91b2e30a}"/>
+</objects>
