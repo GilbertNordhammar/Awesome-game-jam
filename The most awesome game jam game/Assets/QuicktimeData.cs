@@ -9,4 +9,7 @@ public class QuicktimeData : ScriptableObject
     public int cost;
     public float destructionDelay;
     public Vector3 deathForce;
+
+    [FMODUnity.EventRef]
+    public string failSound;
 }

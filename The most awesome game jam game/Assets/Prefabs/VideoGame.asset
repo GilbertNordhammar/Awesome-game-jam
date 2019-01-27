@@ -16,3 +16,4 @@ MonoBehaviour:
   cost: 500
   destructionDelay: 2
   deathForce: {x: -1, y: 6, z: 0}
+  failSound: event:/Test sound
