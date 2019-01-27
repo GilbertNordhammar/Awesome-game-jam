@@ -154,6 +154,7 @@ public class InputSystem : MonoBehaviour
     {
         var newButton = Instantiate(buttonPrefab);
         newButton.SetParent(buttonsToPress);
+        newButton.transform.localScale = Vector3.one;
         return newButton;
     }
 
