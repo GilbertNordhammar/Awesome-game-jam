@@ -38,7 +38,7 @@ public class StageSpawner : MonoBehaviour
     void Awake()
     {
         movementVector = new Vector3(0, 0, -GlobalConfig.StageSpeed);
-        quicktimeSpawnPosition = new Vector3(0, 2, upperEdge);
+        quicktimeSpawnPosition = new Vector3(0, 1, upperEdge);
         quicktimeTimerInitialValue = quicktimeTimer;
     }
 
@@ -75,11 +75,6 @@ public class StageSpawner : MonoBehaviour
             if (move)
             {
                 c.position += movementVector * (slowmo ? GlobalConfig.slowmoFactor : 1.0f);
-            }
-
-            if (c.position.z <= lowerEdge)
-            {
-                //c.position = new Vector3(c.position.x, c.position.y, upperEdge);
             }
         }
     }

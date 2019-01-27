@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44507492, g: 0.49467248, b: 0.57376134, a: 1}
+  m_IndirectSpecularColor: {r: 0.44507462, g: 0.49467206, b: 0.57376075, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -254,7 +254,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 54.23, y: 141.4, z: 0}
 --- !u!1 &406535144
 GameObject:
@@ -671,25 +671,16 @@ MonoBehaviour:
   - {fileID: 2037295142, guid: bb3116b53048cc14d80dce1a3952d8a3, type: 3}
   - {fileID: 2037295142, guid: e517b937004033f45ab4da1c1e238f07, type: 3}
   - {fileID: 2037295142, guid: c85424ab271d7bc4cabc77eee7e3ef2a, type: 3}
-  props:
-  - offsetPosition: {x: 5, y: 0, z: 0}
-    index: 20
-    prop: {fileID: 2037295142, guid: c85424ab271d7bc4cabc77eee7e3ef2a, type: 3}
-  - offsetPosition: {x: -5, y: 0, z: 0}
-    index: 12
-    prop: {fileID: 2037295142, guid: c85424ab271d7bc4cabc77eee7e3ef2a, type: 3}
-  - offsetPosition: {x: 2, y: 0, z: 0}
-    index: 23
-    prop: {fileID: 2037295142, guid: c85424ab271d7bc4cabc77eee7e3ef2a, type: 3}
+  props: []
   stageChunk: {fileID: 4930796009178317624, guid: b6301c1774aff2c48840fa672bb86401,
     type: 3}
   intervalDistance: 2
   chunkLength: 1
   lowerEdge: 50
-  upperEdge: 78
+  upperEdge: 40
   move: 1
   slowmo: 0
-  quicktimeTimer: 0.1
+  quicktimeTimer: 2
 --- !u!4 &1413102697
 Transform:
   m_ObjectHideFlags: 0
@@ -702,7 +693,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1816348237
 GameObject:
@@ -720,6 +711,7 @@ GameObject:
   - component: {fileID: 1816348240}
   - component: {fileID: 1816348245}
   - component: {fileID: 1816348244}
+  - component: {fileID: 1816348246}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -835,7 +827,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1816348244
 MonoBehaviour:
@@ -914,6 +906,19 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!65 &1816348246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816348237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1843205323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5111657346487930433, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1,
@@ -990,7 +995,7 @@ PrefabInstance:
     - target: {fileID: 8504041052048396978, guid: b2d9f13e35b1aa54884d5523e0845b69,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8504041052048396978, guid: b2d9f13e35b1aa54884d5523e0845b69,
         type: 3}

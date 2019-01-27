@@ -139,6 +139,7 @@ MonoBehaviour:
   endTrigger: {fileID: 1388318256}
   graphicModel: {fileID: 1314594043948320794}
   data: {fileID: 11400000, guid: 3d646a69a710167409dc9fe6f5d1fe3a, type: 2}
+  triggerDistance: 6
 --- !u!54 &4543687389131236070
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -212,15 +213,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6f8200d720ae6f242a1026ddad76a671, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6f8200d720ae6f242a1026ddad76a671, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6f8200d720ae6f242a1026ddad76a671, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6f8200d720ae6f242a1026ddad76a671, type: 3}
       propertyPath: m_Materials.Array.data[0]
