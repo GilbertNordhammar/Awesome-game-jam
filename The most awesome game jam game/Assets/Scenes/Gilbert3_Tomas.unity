@@ -686,10 +686,10 @@ MonoBehaviour:
   intervalDistance: 2
   chunkLength: 1
   lowerEdge: 50
-  upperEdge: 78
+  upperEdge: 50
   move: 1
   slowmo: 0
-  quicktimeTimer: 0.1
+  quicktimeTimer: 2
 --- !u!4 &1413102697
 Transform:
   m_ObjectHideFlags: 0
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3217aa68a0a57e24f9c3b9fe15e15eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starting_riksdaler: 10
+  starting_riksdaler: 10000
   spawner: {fileID: 1413102696}
   armsAnimator: {fileID: 3154051261437396520}
   difficulty: 10
