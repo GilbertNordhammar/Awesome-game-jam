@@ -62,6 +62,12 @@ public class Character : MonoBehaviour
         InputSystem.instance.SetLose();
     }
 
+    void Win()
+    {
+        spawner.move = false;
+        MoneyDisplay.instance.Win();
+    }
+
     // returns -1.0f if there is no active quicktime event approaching the player.
     public float DistanceToQuicktimeEnd()
     {
@@ -101,7 +107,7 @@ public class Character : MonoBehaviour
             ReceiptDisplay.instance.SetTotalCost(currentQuicktime.data.cost);
             ReceiptDisplay.instance.SetThingName(currentQuicktime.data.thingName);
             ReceiptDisplay.instance.Show(true);
-            Invoke("HideReceipt", 1f);
+            Invoke("HideReceipt", 1.2f);
 
             svenska_riksdaler -= currentQuicktime.data.cost;
             Destroy(currentQuicktime.gameObject);
@@ -122,6 +128,10 @@ public class Character : MonoBehaviour
         }
         else if (col.CompareTag("EndTrigger")) {
             TriggerQuicktimeEventOver(false);
+        }
+        else if (col.CompareTag("Home"))
+        {
+            Win();
         }
     }
 }

@@ -10,6 +10,8 @@ public class MoneyDisplay : MonoBehaviour
     public Text moneyText;
     public Text loseText;
 
+    public RectTransform winScreen;
+
     private int moneyTarget;
     private int currentMoney;
 
@@ -54,6 +56,11 @@ public class MoneyDisplay : MonoBehaviour
     public void SetLoseTextEnabled(bool enabled)
     {
         loseText.enabled = enabled;
+    }
+
+    public void Win()
+    {
+        winScreen.gameObject.SetActive(true);
     }
 
     // Update is called once per frame

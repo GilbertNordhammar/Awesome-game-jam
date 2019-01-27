@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EndTrigger
   - Trigger
+  - Home
   layers:
   - Default
   - TransparentFX
