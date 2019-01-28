@@ -42,7 +42,7 @@ MonoBehaviour:
   - Platform: 1
     Value: 1
   - Platform: 2
-    Value: 1
+    Value: 2
   LoggingSettings:
   - Platform: 1
     Value: 1
