@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 167122031}
   - component: {fileID: 167122030}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Bill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 759.28, y: 0}
   m_SizeDelta: {x: 800, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &167122031
@@ -587,8 +587,9 @@ MonoBehaviour:
   buttonsToPress: {fileID: 5111657345991822986}
   buttonPrefab: {fileID: 7968962375206964618, guid: 8a7af807f71f5a24ca86ea0e9e912f1c,
     type: 3}
-  soundCorrectButton: event:/Test sound
-  soundWrongButton: event:/Test sound
+  soundCorrectButton: event:/SFX/EventSFX/ButtonPress
+  soundWrongButton: event:/SFX/EventSFX/Fail
+  soundSucces: event:/SFX/EventSFX/Success
 --- !u!1 &5111657346487930433
 GameObject:
   m_ObjectHideFlags: 0

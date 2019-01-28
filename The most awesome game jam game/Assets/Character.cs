@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    [Space]
     public int starting_riksdaler;
 
     public StageSpawner spawner;

@@ -26,6 +26,9 @@ public class InputSystem : MonoBehaviour
     [FMODUnity.EventRef]
     public string soundWrongButton;
 
+    [FMODUnity.EventRef]
+    public string soundSucces;
+
     bool lost = false;
     bool isPlaying = false;
     Queue<KeyObject> keysToPress;
@@ -92,16 +95,24 @@ public class InputSystem : MonoBehaviour
 
         if (correctKeyPressed)
         {
-            var sound = FMODUnity.RuntimeManager.CreateInstance(soundCorrectButton);
-            sound.start();
+            if (keysToPress.Count > 0)
+            {
+                var sound = FMODUnity.RuntimeManager.CreateInstance(soundCorrectButton);
+                sound.start();
+            }
+            else
+            {
+                var sound = FMODUnity.RuntimeManager.CreateInstance(soundSucces);
+                sound.start();
+            }
 
             Destroy(currentKey.trans.gameObject);
             currentKey = null;
         }
         else if (wrongKeyPressed)
         {
-            var sound = FMODUnity.RuntimeManager.CreateInstance(soundWrongButton);
-            sound.start();
+            //var sound = FMODUnity.RuntimeManager.CreateInstance(soundWrongButton);
+            //sound.start();
 
             StopInput();
             Failure.Invoke();

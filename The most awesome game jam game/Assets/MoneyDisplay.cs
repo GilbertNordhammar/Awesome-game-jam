@@ -37,6 +37,7 @@ public class MoneyDisplay : MonoBehaviour
 
     public void SoftSetMoney(int money)
     {
+        Debug.Log(gameObject.name);
         Debug.Log("Set money target to: " + money);
         moneyTarget = money;
     }

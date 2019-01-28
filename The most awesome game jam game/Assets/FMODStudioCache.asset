@@ -13,16 +13,31 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114783432408156248}
-  - {fileID: 114034079906756302}
-  - {fileID: 114437038588467428}
+  - {fileID: 114161357801073300}
+  - {fileID: 114434054032106324}
   EditorEvents:
-  - {fileID: 114328836079457276}
+  - {fileID: 114946344929968536}
+  - {fileID: 114765544119151224}
+  - {fileID: 114765514706118580}
+  - {fileID: 114103352885164624}
+  - {fileID: 114310594736973942}
+  - {fileID: 114131695800498436}
+  - {fileID: 114411005883162070}
+  - {fileID: 114563170330312450}
+  - {fileID: 114065345441105748}
+  - {fileID: 114817021665091426}
+  - {fileID: 114335246826672416}
+  - {fileID: 114749291195719074}
+  - {fileID: 114447819474862556}
+  - {fileID: 114516332187491814}
+  - {fileID: 114761436423920960}
+  - {fileID: 114066452547234250}
+  - {fileID: 114308334276612382}
   MasterBanks:
-  - {fileID: 114437038588467428}
+  - {fileID: 114434054032106324}
   StringsBanks:
-  - {fileID: 114783432408156248}
-  stringsBankWriteTime: 636841800662752350
+  - {fileID: 114161357801073300}
+  stringsBankWriteTime: 636841949571968632
   cacheVersion: 3
 --- !u!114 &114006221335806166
 MonoBehaviour:
@@ -87,6 +102,52 @@ MonoBehaviour:
   - Name: Desktop
     Value: 27616
   Exists: 1
+--- !u!114 &114065345441105748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ObjectSFX/PickUps/PS4
+  guid: 507ae312b68b0b46b414234d7713ed33
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 932
+--- !u!114 &114066452547234250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/CityAMB
+  guid: e4d9df017142ee4e83288af5b8917a76
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5360
 --- !u!114 &114083642951235666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +168,49 @@ MonoBehaviour:
   - Name: Desktop
     Value: 12474
   Exists: 1
+--- !u!114 &114103352885164624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EventSFX/ButtonPress
+  guid: 14b7fc964f661e4c99525c540bda1463
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 859
+--- !u!114 &114104291422742286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod test project\Build\Desktop\Test
+    Bank.bank
+  lastModified: 636841879454582906
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 27616
+  Exists: 0
 --- !u!114 &114110797016840288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +254,118 @@ MonoBehaviour:
   - Name: Desktop
     Value: 12474
   Exists: 1
+--- !u!114 &114131695800498436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EventSFX/Bill
+  guid: 2435c89c318a8947b71425a8537265a3
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
+--- !u!114 &114161357801073300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod test project\Build\Desktop\Master
+    Bank.strings.bank
+  lastModified: 636841949571968632
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2496
+  Exists: 1
+--- !u!114 &114165770889403436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Test sound
+  guid: 2dc465509c2ada4c9a7d5146e2e1bd8c
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1907
+--- !u!114 &114308334276612382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EventSFX/LoseMoney
+  guid: e82d11b109fa904a94ef3414127a388d
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114630410070112578}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 900
+--- !u!114 &114310594736973942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PlayerSFX/PlayerPunch
+  guid: 15519fb9c61af14fb46379c5b8057493
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 498
 --- !u!114 &114328836079457276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +389,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1907
+--- !u!114 &114335246826672416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PlayerSFX/PlayerFootsteps
+  guid: 631feb082a00d643953f65be65f585ba
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 523
 --- !u!114 &114343620455016180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +432,45 @@ MonoBehaviour:
   - Name: Desktop
     Value: 27616
   Exists: 1
+--- !u!114 &114399595280160616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Coins
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114411005883162070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ObjectSFX/PizzaCar
+  guid: 41aa2763a13d0c45acb16b368063dcbd
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &114434032844516160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +490,26 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 12474
+  Exists: 1
+--- !u!114 &114434054032106324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod test project\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636841949571958661
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1544608
   Exists: 1
 --- !u!114 &114437038588467428
 MonoBehaviour:
@@ -233,6 +531,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 12474
   Exists: 1
+--- !u!114 &114447819474862556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EventSFX/Fail
+  guid: a7346b2858822249bb89512628be523f
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1559
 --- !u!114 &114456652242524408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +613,52 @@ MonoBehaviour:
   - Name: Desktop
     Value: 27616
   Exists: 1
+--- !u!114 &114516332187491814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ObjectSFX/PickUps/Pizza
+  guid: b8c8d2031dd51c4ebacac65dff283bb7
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1495
+--- !u!114 &114563170330312450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PlayerSFX/PlayerBreath
+  guid: 4ded4ec6cf679540b43edc084fec2d84
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
 --- !u!114 &114575102257307586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +679,22 @@ MonoBehaviour:
   - Name: Desktop
     Value: 772
   Exists: 1
+--- !u!114 &114630410070112578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Coins
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114641894224327296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +774,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 772
   Exists: 1
+--- !u!114 &114749291195719074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/ParkAMB
+  guid: 829236a2a9440448afe053441640f04b
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 45
+  Length: 52386
 --- !u!114 &114751985038479064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +816,75 @@ MonoBehaviour:
   - Name: Desktop
     Value: 772
   Exists: 1
+--- !u!114 &114761436423920960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ObjectSFX/PickUps/EnergyDrink
+  guid: c6e01182eb96934a8360ae358a680a62
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3219
+--- !u!114 &114765514706118580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ObjectSFX/RandomCar
+  guid: 0f71caf901767b43849acb2d769772b3
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &114765544119151224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EventSFX/Success
+  guid: 095db2a4b8784447b7a202df85fe91af
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 978
 --- !u!114 &114783432408156248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,6 +905,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 772
   Exists: 1
+--- !u!114 &114817021665091426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Slo-Mo-Snapshot
+  guid: 60bb7dda1b9c304f8870afa0996d5103
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114830882660101276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,3 +1017,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1907
+--- !u!114 &114946344929968536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EventSFX/SloMo
+  guid: 08453f3cd896f241bd03f92b69a6cae0
+  Banks:
+  - {fileID: 114434054032106324}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2763
