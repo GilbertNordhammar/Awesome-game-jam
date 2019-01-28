@@ -60,13 +60,15 @@ public class Character : MonoBehaviour
         spawner.move = false;
         GetComponent<CapsuleCollider>().isTrigger = false;
         body.useGravity = true;
-        InputSystem.instance.SetLose();
+        InputSystem.instance.PlaySessionIsOver();
     }
 
     void Win()
     {
         spawner.move = false;
         MoneyDisplay.instance.Win();
+        InputSystem.instance.PlaySessionIsOver();
+        MoneyDisplay.instance.SetWinTextEnabled(true);
     }
 
     // returns -1.0f if there is no active quicktime event approaching the player.

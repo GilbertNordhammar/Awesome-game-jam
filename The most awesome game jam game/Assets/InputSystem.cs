@@ -29,7 +29,8 @@ public class InputSystem : MonoBehaviour
     [FMODUnity.EventRef]
     public string soundSucces;
 
-    bool lost = false;
+    bool playSessionIsOver = false;
+    bool win = false;
     bool isPlaying = false;
     Queue<KeyObject> keysToPress;
     KeyObject currentKey;
@@ -67,7 +68,7 @@ public class InputSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lost && Input.GetKeyDown(KeyCode.Return))
+        if (playSessionIsOver && Input.GetKeyDown(KeyCode.Return))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -178,9 +179,9 @@ public class InputSystem : MonoBehaviour
         return newButton;
     }
 
-    public void SetLose()
+    public void PlaySessionIsOver()
     {
-        lost = true;
+        playSessionIsOver = true;
     }
 
     class KeyObject

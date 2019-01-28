@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MoneyDisplay : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class MoneyDisplay : MonoBehaviour
 
     public Text moneyText;
     public Text loseText;
+    public TextMeshProUGUI winText;
 
     public RectTransform winScreen;
 
@@ -57,6 +59,11 @@ public class MoneyDisplay : MonoBehaviour
     public void SetLoseTextEnabled(bool enabled)
     {
         loseText.enabled = enabled;
+    }
+
+    public void SetWinTextEnabled(bool enabled)
+    {
+        winText.enabled = enabled;
     }
 
     public void Win()
