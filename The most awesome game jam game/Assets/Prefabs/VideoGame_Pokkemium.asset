@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thingName: Pokkiimum stop for PC4
   animation: uppercut
-  cost: 700
-  difficulty: 6
+  cost: 500
+  difficulty: 4
   destructionDelay: 2
   deathForce: {x: -1, y: 6, z: 0}
   failSound: event:/SFX/ObjectSFX/PickUps/PS4

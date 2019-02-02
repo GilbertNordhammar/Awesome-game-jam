@@ -14,12 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod test project\fmod
+  sourceProjectPath: E:\Workspace\Spelprojekt\Awesome-game-jam\fmod test project\fmod
     test project.fspro
-  SourceProjectPathUnformatted: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod
-    test project\fmod test project.fspro
-  SourceBankPathUnformatted: D:\Programmering\Global Game Jam\Awesome-game-jam\fmod
-    test project\Build
+  SourceProjectPathUnformatted: E:\Workspace\Spelprojekt\Awesome-game-jam\fmod test
+    project\fmod test project.fspro
+  SourceBankPathUnformatted: E:\Workspace\Spelprojekt\Awesome-game-jam\fmod test project\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
