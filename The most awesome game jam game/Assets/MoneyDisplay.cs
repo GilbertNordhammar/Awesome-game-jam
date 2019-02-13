@@ -83,6 +83,7 @@ public class MoneyDisplay : MonoBehaviour
     void Update()
     {
         if (moneyTarget <= 0) {
+            moneyDropSoundInstance.setParameterValue("coins", 1.0f);
             SetMoney(0);
         } else if (currentMoney > moneyTarget) {
             if (currentMoney - moneyTarget > 2000) {

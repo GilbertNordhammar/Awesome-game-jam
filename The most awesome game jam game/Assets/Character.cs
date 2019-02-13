@@ -35,12 +35,32 @@ public class Character : MonoBehaviour
     [FMODUnity.EventRef]
     public string slapEvent;
 
+    [FMODUnity.EventRef]
+    public string stepEvent;
+
+    [FMODUnity.EventRef]
+    public string breathEvent;
+
+    [Space]
+    public float stepInterval;
+
+    private float stepCounter;
+
     private Rigidbody body;
 
-    FMOD.Studio.EventInstance slapEventInstance;
-    FMOD.Studio.EventInstance slowmoEventInstance;
+    private FMOD.Studio.EventInstance slapEventInstance;
+    private FMOD.Studio.EventInstance slowmoEventInstance;
+    private FMOD.Studio.EventInstance breathEventInstance;
+    private FMOD.Studio.EventInstance stepEventInstance;
+
+    private bool slowmo;
+    private bool lost;
+
+    private float startingFOV;
+
     void Awake() {
         body = GetComponent<Rigidbody>();
+        startingFOV = Camera.main.fieldOfView;
     }
 
     // Start is called before the first frame update
@@ -52,16 +72,36 @@ public class Character : MonoBehaviour
 
         slowmoEventInstance = FMODUnity.RuntimeManager.CreateInstance(slowmoEvent);
         slapEventInstance = FMODUnity.RuntimeManager.CreateInstance(slapEvent);
+        breathEventInstance = FMODUnity.RuntimeManager.CreateInstance(breathEvent);
+        stepEventInstance = FMODUnity.RuntimeManager.CreateInstance(stepEvent);
+
+        breathEventInstance.start();
+
+        slowmo = false;
+        lost = false;
+        stepCounter = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        stepCounter += Time.deltaTime * (slowmo ? GlobalConfig.slowmoFactor * 2f : 1.0f);
 
+        if (stepCounter > stepInterval && !lost)
+        {
+            stepEventInstance.start();
+            stepCounter = 0f;
+        }
+
+        if (slowmo)
+        {
+            Camera.main.fieldOfView -= (GlobalConfig.slowmoFactor * 0.2f);
+        }
     }
 
     void Lose()
     {
+        lost = true;
         body.AddTorque(new Vector3(
             2.0f, 
             UnityEngine.Random.Range(0f, 2f) - 1f, 
@@ -98,7 +138,7 @@ public class Character : MonoBehaviour
         currentQuicktime = obj;
         InputSystem.instance.StartInput(obj.data.difficulty);
         spawner.OnQuicktimeStart();
-        slowmoEventInstance.start();
+        ActivateSlowmo();
     }
 
     void TriggerQuicktimeEventSuccess()
@@ -114,6 +154,20 @@ public class Character : MonoBehaviour
     void TriggerSlapSound()
     {
         slapEventInstance.start();
+    }
+
+    void ActivateSlowmo()
+    {
+        slowmo = true;
+        armsAnimator.SetFloat("arm_speed", GlobalConfig.slowmoFactor);
+        slowmoEventInstance.start();
+    }
+
+    void DeactivateSlowmo()
+    {
+        slowmo = false;
+        armsAnimator.SetFloat("arm_speed", 1.0f);
+        Camera.main.fieldOfView = startingFOV;
     }
 
     public void TriggerQuicktimeEventOver(bool success)
@@ -135,6 +189,7 @@ public class Character : MonoBehaviour
         }
         InputSystem.instance.StopInput();
         spawner.OnQuicktimeEnd(success);
+        DeactivateSlowmo();
     }
 
     void HideReceipt()

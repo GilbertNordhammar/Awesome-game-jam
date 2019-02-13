@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44507462, g: 0.49467206, b: 0.57376075, a: 1}
+  m_IndirectSpecularColor: {r: 0.44507492, g: 0.49467248, b: 0.57376134, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -549,7 +549,7 @@ MonoBehaviour:
   - {fileID: 2037295142, guid: ad4d457f46e2d9c4b979df2778a7bf4a, type: 3}
   difficulty3:
   - {fileID: 2037295142, guid: e517b937004033f45ab4da1c1e238f07, type: 3}
-  - {fileID: 2037295142, guid: c533ef66f2d00484f8f559eec2be3b2e, type: 3}
+  - {fileID: 2037295142, guid: 3e7c5e735795d694b9f098b7dde76419, type: 3}
   - {fileID: 2037295142, guid: c85424ab271d7bc4cabc77eee7e3ef2a, type: 3}
   props:
   - offsetPosition: {x: 5, y: 0, z: 0}
@@ -644,6 +644,9 @@ MonoBehaviour:
   difficulty: 10
   slowmoEvent: event:/SFX/EventSFX/SloMo
   slapEvent: event:/SFX/PlayerSFX/PlayerPunch
+  stepEvent: event:/SFX/PlayerSFX/PlayerFootsteps
+  breathEvent: event:/SFX/PlayerSFX/PlayerBreath
+  stepInterval: 0.5
 --- !u!136 &1816348240
 CapsuleCollider:
   m_ObjectHideFlags: 0

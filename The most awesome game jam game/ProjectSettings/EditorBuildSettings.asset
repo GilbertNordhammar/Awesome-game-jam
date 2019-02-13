@@ -17,7 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Gilbert 3.unity
     guid: a804e21761bf93747ad152d6f687b839
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final Scene.unity
     guid: e99e9e47bb212454683a3fdda09e870e
+  - enabled: 1
+    path: Assets/Scenes/PostGameJamFixes.unity
+    guid: 442a28b40e0f46942bc10f280f4558af
   m_configObjects: {}

@@ -35,7 +35,7 @@ public class QuickTimeTrigger : MonoBehaviour
             Invoke("ThrowOff", 0.4f);
         }
 
-        if (data.destructionDelay == 0f)
+        if (data.destructionDelay <= 0f)
         {
             SelfDestruct();
         }
