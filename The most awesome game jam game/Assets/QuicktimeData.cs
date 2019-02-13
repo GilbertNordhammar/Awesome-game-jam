@@ -14,4 +14,6 @@ public class QuicktimeData : ScriptableObject
 
     [FMODUnity.EventRef]
     public string failSound;
+
+    public FMOD.Studio.EventInstance failSoundInstance;
 }

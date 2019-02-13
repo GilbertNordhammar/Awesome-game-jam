@@ -14,8 +14,15 @@ public class MoneyDisplay : MonoBehaviour
 
     public RectTransform winScreen;
 
+    [FMODUnity.EventRef]
+    public string moneyDropEvent;
+
     private int moneyTarget;
     private int currentMoney;
+
+    private FMOD.Studio.EventInstance moneyDropSoundInstance;
+
+    private bool rolling;
 
     void Awake()
     {
@@ -34,14 +41,15 @@ public class MoneyDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        moneyDropSoundInstance = FMODUnity.RuntimeManager.CreateInstance(moneyDropEvent);
     }
 
     public void SoftSetMoney(int money)
     {
-        Debug.Log(gameObject.name);
-        Debug.Log("Set money target to: " + money);
         moneyTarget = money;
+
+        moneyDropSoundInstance.setParameterValue("coins", 0.0f);
+        moneyDropSoundInstance.start();
     }
 
     public void SetMoney(int money)
@@ -83,6 +91,11 @@ public class MoneyDisplay : MonoBehaviour
                 currentMoney -= 50;
             } else {
                 currentMoney--;
+
+                if (currentMoney <= moneyTarget)
+                {
+                    moneyDropSoundInstance.setParameterValue("coins", 1.0f);
+                }
             }
             SetMoneyText(currentMoney);
         } else if (currentMoney < moneyTarget) {
@@ -92,6 +105,11 @@ public class MoneyDisplay : MonoBehaviour
                 currentMoney += 50;
             } else {
                 currentMoney++;
+
+                if (currentMoney >= moneyTarget)
+                {
+                    moneyDropSoundInstance.setParameterValue("coins", 1.0f);
+                }
             }
             SetMoneyText(currentMoney);
         }

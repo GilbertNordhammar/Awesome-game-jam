@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44507492, g: 0.49467248, b: 0.57376134, a: 1}
+  m_IndirectSpecularColor: {r: 0.44507462, g: 0.49467206, b: 0.57376075, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -176,7 +176,7 @@ Transform:
   m_GameObject: {fileID: 323581100}
   m_LocalRotation: {x: 0.1506412, y: 0.84007114, z: -0.43016362, w: 0.29418883}
   m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.000001, y: 1.0000002, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -249,6 +249,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1070314838052378698, guid: a05c86b11a3426c44afbc856bb353c14,
+        type: 3}
+      propertyPath: m_Name
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070314838052378698, guid: a05c86b11a3426c44afbc856bb353c14,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1070314838052378699, guid: a05c86b11a3426c44afbc856bb353c14,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -302,16 +312,6 @@ PrefabInstance:
     - target: {fileID: 1070314838052378699, guid: a05c86b11a3426c44afbc856bb353c14,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070314838052378698, guid: a05c86b11a3426c44afbc856bb353c14,
-        type: 3}
-      propertyPath: m_Name
-      value: Environment
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070314838052378698, guid: a05c86b11a3426c44afbc856bb353c14,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -432,6 +432,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843205324, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1, type: 3}
+      propertyPath: moneyDropEvent
+      value: event:/SFX/EventSFX/LoseMoney
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c8aecdfc19864f41b6b7a00ce1f74d1, type: 3}
@@ -598,6 +602,7 @@ GameObject:
   - component: {fileID: 1816348240}
   - component: {fileID: 1816348245}
   - component: {fileID: 1816348244}
+  - component: {fileID: 1816348246}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -637,6 +642,8 @@ MonoBehaviour:
   spawner: {fileID: 1413102696}
   armsAnimator: {fileID: 3154051261437396520}
   difficulty: 10
+  slowmoEvent: event:/SFX/EventSFX/SloMo
+  slapEvent: event:/SFX/PlayerSFX/PlayerPunch
 --- !u!136 &1816348240
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -792,6 +799,19 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1816348246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816348237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!1 &2140845856
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ public class QuickTimeTrigger : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
         trigger.transform.localPosition = new Vector3(0, 0, -triggerDistance);
+        data.failSoundInstance = FMODUnity.RuntimeManager.CreateInstance(data.failSound);
     }
 
     // Update is called once per frame

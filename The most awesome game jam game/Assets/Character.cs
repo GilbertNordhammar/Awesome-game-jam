@@ -28,8 +28,17 @@ public class Character : MonoBehaviour
         }
     }
 
+    [Space]
+    [FMODUnity.EventRef]
+    public string slowmoEvent;
+
+    [FMODUnity.EventRef]
+    public string slapEvent;
+
     private Rigidbody body;
 
+    FMOD.Studio.EventInstance slapEventInstance;
+    FMOD.Studio.EventInstance slowmoEventInstance;
     void Awake() {
         body = GetComponent<Rigidbody>();
     }
@@ -40,6 +49,9 @@ public class Character : MonoBehaviour
         svenska_riksdaler = starting_riksdaler;
         InputSystem.instance.Failure += TriggerQuicktimeEventFail;
         InputSystem.instance.Succes += TriggerQuicktimeEventSuccess;
+
+        slowmoEventInstance = FMODUnity.RuntimeManager.CreateInstance(slowmoEvent);
+        slapEventInstance = FMODUnity.RuntimeManager.CreateInstance(slapEvent);
     }
 
     // Update is called once per frame
@@ -86,6 +98,7 @@ public class Character : MonoBehaviour
         currentQuicktime = obj;
         InputSystem.instance.StartInput(obj.data.difficulty);
         spawner.OnQuicktimeStart();
+        slowmoEventInstance.start();
     }
 
     void TriggerQuicktimeEventSuccess()
@@ -98,14 +111,19 @@ public class Character : MonoBehaviour
         TriggerQuicktimeEventOver(false);
     }
 
+    void TriggerSlapSound()
+    {
+        slapEventInstance.start();
+    }
+
     public void TriggerQuicktimeEventOver(bool success)
     {
         if (success) {
             armsAnimator.SetTrigger(currentQuicktime.data.animation);
             currentQuicktime.DestroyObj();
+            Invoke("TriggerSlapSound", 0.4f);
         } else {
-            var sound = FMODUnity.RuntimeManager.CreateInstance(currentQuicktime.data.failSound);
-            sound.start();
+            currentQuicktime.data.failSoundInstance.start();
 
             ReceiptDisplay.instance.SetTotalCost(currentQuicktime.data.cost);
             ReceiptDisplay.instance.SetThingName(currentQuicktime.data.thingName);
